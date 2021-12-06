@@ -1,0 +1,32 @@
+print("Name: "..os.getComputerLabel())
+print("ID: "..os.getComputerID())
+print("Fuel: "..turtle.getFuelLevel())
+
+turtle.digdown()
+turtle.down()
+
+for y=1, 200, 1 do
+	for y=1, 8, 1 do
+		for y=1, 16, 1 do
+			if turtle.detect()
+				turtle.dig()    
+			end
+			turtle.forward()
+		end
+	turtle.turnright()
+	turtle.turnright()
+		for y=1, 16, 1 do
+			if turtle.detect()
+				turtle.dig()    
+			end
+			turtle.forward()
+		end
+	turtle.turnleft()
+	turtle.turnleft()
+	end
+turtle.digdown()
+turtle.down()
+turtle.turnleft()
+end
+
+print(done)
